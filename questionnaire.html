@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Questionnaire - Online Scam Survey</title>
+  <link rel="stylesheet" href="questionnaire.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="abstract.html">Abstract</a>
+      <a href="introduction.html">Introduction</a>
+      <a href="survey-data.html">Survey Data</a>
+      <a href="questionnaire.html" class="active">Questionnaire</a>
+      <a href="conclusion.html">Conclusion</a>
+      <a href="activity.html">Activity Log</a>
+      <a href="pictures.html">Pictures</a>
+      <a href="members.html">Members</a>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <h1>Survey Questionnaire</h1>
+    <form class="questionnaire-form">
+      <label for="name">1. What is your name?</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="aadhaar">2. What is your Aadhaar number?</label>
+      <input type="text" id="aadhaar" name="aadhaar" required maxlength="12" />
+
+      <label for="shop-online">3. Do you shop online?</label>
+      <select id="shop-online" name="shop-online" required>
+        <option value="">-- Select --</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label for="experienced-scam">4. If yes, did you experience any scam or fraud during online shopping?</label>
+      <select id="experienced-scam" name="experienced-scam" required>
+        <option value="">-- Select --</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label for="scam-type">5. What type of scam or fraud did you experience?</label>
+      <textarea id="scam-type" name="scam-type" rows="4" placeholder="Eg: Fake product, not delivered, overcharged, etc..."></textarea>
+
+      <div class="form-buttons">
+        <a href="index.html" class="btn">Back to Home</a>
+        <a href="conclusion.html" class="btn">Next Page</a>
+      </div>
+    </form>
+  </section>
+</body>
+</html>

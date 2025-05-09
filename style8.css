@@ -1,0 +1,155 @@
+/* Reset some defaults */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #003b6f;
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ffc107;
+  }
+  
+  /* Titles */
+  .report-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .week-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  
+  .week-title a {
+    color: #003b6f;
+    text-decoration: none;
+  }
+  
+  .week-title a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main content container */
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  /* Left side: Day buttons */
+  .left-tabs {
+    background-color: #003b6f;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+  }
+  
+  .left-tabs button {
+    background-color: #003b6f;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    border-bottom: 1px solid #ffffff2a;
+  }
+  
+  .left-tabs button:hover {
+    background-color: #005599;
+  }
+  
+  /* Right side: Activity content */
+  .right-content {
+    padding: 20px;
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Navigation buttons (Previous/Next) */
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .nav-buttons button {
+    background-color: #003b6f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #005599;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-tabs {
+      flex-direction: row;
+      width: 100%;
+      overflow-x: auto;
+    }
+  
+    .left-tabs button {
+      flex: 1;
+      white-space: nowrap;
+      border-bottom: none;
+      border-right: 1px solid #ffffff2a;
+    }
+  
+    .right-content {
+      padding: 15px;
+    }
+  }
+  

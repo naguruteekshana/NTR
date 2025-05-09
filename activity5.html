@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 5 Activity Log</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f8fc;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease;
+    }
+
+    .main-heading {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #023e8a;
+      margin-bottom: 10px;
+    }
+
+    .sub-heading {
+      text-align: center;
+      font-size: 1.3rem;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .row {
+      display: flex;
+      border-bottom: 1px solid #e2e8f0;
+      background: #fdfdfd;
+      transition: background 0.3s ease;
+    }
+
+    .row:hover {
+      background: #e9f5ff;
+    }
+
+    .header {
+      background: #0077b6;
+      color: white;
+      font-weight: 600;
+    }
+
+    .cell {
+      flex: 1;
+      padding: 14px 16px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .btn {
+      padding: 10px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .prev {
+      background: #0077b6;
+      color: white;
+    }
+
+    .prev:hover {
+      background: #023e8a;
+      transform: translateY(-2px);
+    }
+
+    .next {
+      background: #0077b6;
+      color: white;
+    }
+
+    .next:hover {
+      background: #023e8a;
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cell {
+        padding: 12px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1 class="main-heading">📑 Detailed Report</h1>
+    <h2 class="sub-heading">Week–5: Learning Technology</h2>
+
+    <div class="table">
+      <div class="row header">
+        <div class="cell">DAY</div>
+        <div class="cell">ACTIVITY</div>
+      </div>
+
+      <div class="row"><div class="cell">Day–1</div><div class="cell">Learning User Interface Components in HTML – Label, TextField, Button</div></div>
+      <div class="row"><div class="cell">Day–2</div><div class="cell">Learning User Interface Components in HTML – Checkbox, List</div></div>
+      <div class="row"><div class="cell">Day–3</div><div class="cell">Learning User Interface Components in HTML – Dropdown list, Text Area</div></div>
+      <div class="row"><div class="cell">Day–4</div><div class="cell">Learning about Submit button and Refresh button in HTML</div></div>
+      <div class="row"><div class="cell">Day–5</div><div class="cell">Learning User Interface Components in HTML – Form Method, Post method, Get method</div></div>
+      <div class="row"><div class="cell">Day–6</div><div class="cell">Learning and Understanding Basics of JavaScript – Variables, DataTypes, Functions, etc…</div></div>
+    </div>
+
+    <div class="buttons">
+      <a href="activity4.html" class="btn prev">← Previous</a>
+      <a href="activity6.html" class="btn next">Next →</a>
+    </div>
+  </main>
+</body>
+</html>

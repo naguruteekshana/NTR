@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #dbe6f6, #c5796d);
+    color: #2c3e50;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #2c3e50;
+    padding: 15px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  /* Content */
+  .conclusion-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+  }
+  
+  .content-box, .inference-box {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    animation: fadeIn 1.2s ease;
+    text-align: left;
+  }
+  
+  /* Inference Table */
+  .inference-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .inference-box th, .inference-box td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    font-weight: 500;
+  }
+  
+  .inference-box th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+  }
+  
+  /* Charts */
+  .charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  canvas {
+    max-width: 450px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  }
+  
+  /* Buttons */
+  .btn-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    background-color: #1dd1a1;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #10ac84;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

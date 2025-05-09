@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conclusion | Survey Project</title>
+  <link rel="stylesheet" href="conclusion.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="abstract.html">Abstract</a></li>
+      <li><a href="introduction.html">Introduction</a></li>
+      <li><a href="survey-data.html">Survey Data</a></li>
+      <li><a href="questionnaire.html">Questionnaire</a></li>
+      <li><a class="active" href="conclusion.html">Conclusion</a></li>
+      <li><a href="activity.html">Activity Log</a></li>
+      <li><a href="pictures.html">Pictures</a></li>
+      <li><a href="members.html">Members</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="conclusion-container">
+    <h1>Conclusion</h1>
+
+    <div class="content-box">
+      <p>
+        In conclusion, we have identified individuals who have experienced fraud or scam during online shopping.
+        It is crucial for enhancing consumer protection and reducing financial losses. <br><br>
+        Key indicators include unauthorized transactions, non-delivery of goods, and unusual account activity.
+        Preventive measures such as secure payment gateways, multifactor authentication, and consumer education
+        can mitigate risks. Collaborative efforts between e-commerce platforms, financial institutions,
+        and cybersecurity agencies are essential to ensure a safer experience for consumers.
+      </p>
+    </div>
+
+    <!-- Inference Table -->
+    <div class="inference-box">
+      <h2>Survey Inference</h2>
+      <table>
+        <tr>
+          <th>Survey Detail</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>Total number of residents surveyed</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>No. of people affected by fraud or scam</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>No. of people not affected</td>
+          <td>38</td>
+        </tr>
+        <tr>
+          <td>Total affected (reconfirmed)</td>
+          <td>12</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts">
+      <canvas id="barChart"></canvas>
+      <canvas id="pieChart"></canvas>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-container">
+      <a href="index.html" class="btn">← Back to Home</a>
+      <a href="references.html" class="btn">Next Page →</a>
+    </div>
+  </section>
+
+  <script>
+    const bar = document.getElementById("barChart").getContext("2d");
+    const pie = document.getElementById("pieChart").getContext("2d");
+
+    new Chart(bar, {
+      type: "bar",
+      data: {
+        labels: ["Affected", "Not Affected", "Total Surveyed"],
+        datasets: [{
+          label: "Number of People",
+          data: [12, 38, 50],
+          backgroundColor: ["#ff6b6b", "#1dd1a1", "#576574"],
+          borderRadius: 10,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "Survey Summary (Bar Graph)",
+            font: { size: 18 }
+          },
+          tooltip: {
+            enabled: true
+          }
+        },
+        animation: {
+          duration: 1500,
+          easing: 'easeOutBounce'
+        }
+      }
+    });
+
+    new Chart(pie, {
+      type: "doughnut",
+      data: {
+        labels: ["Affected", "Not Affected"],
+        datasets: [{
+          data: [12, 38],
+          backgroundColor: ["#ff6b6b", "#1dd1a1"],
+          hoverOffset: 10
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: "bottom",
+            labels: { font: { size: 14 } }
+          },
+          title: {
+            display: true,
+            text: "Affected vs Not Affected (Pie Chart)",
+            font: { size: 18 }
+          },
+          tooltip: {
+            enabled: true
+          }
+        },
+        animation: {
+          animateRotate: true,
+          duration: 1500
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: url(DP7cgd.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar a {
+    color: cyan;
+    text-decoration: none;
+    margin: 10px 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 7px 9px;
+    border-radius: 8px;
+  }
+  
+  .navbar a:hover {
+    background: linear-gradient(90deg, #00f0ff, #ff00f0);
+    color: black;
+    box-shadow: 0 0 10px cyan;
+    transform: scale(1.05);
+  }
+  
+  .navbar a.active {
+    background: aqua;
+    color: black;
+    box-shadow: 0 0 12px aqua;
+  }
+  
+  .page-title {
+    text-align: center;
+    margin: 40px 20px 20px;
+    font-size: 42px;
+    color: #ff00f0;
+    text-shadow: 0 0 15px #ff00f0;
+  }
+  
+  .content-box {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    font-size: 1.2em;
+    line-height: 1.6;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  .nav-links a {
+    color: violet;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: white;
+    text-shadow: 0 0 10px #ff00ff;
+  }
+  

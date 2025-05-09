@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Data</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+    }
+    /* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 25px;
+  background: rgba(0, 0, 0, 0.85);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+  border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+  border-radius: 33px;
+}
+
+.navbar a {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #00ffff, #00e5ff);
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.navbar a:hover::before {
+  height: 100%;
+}
+
+.navbar a:hover {
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  transform: scale(1.05);
+}
+
+.navbar a.active {
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table tbody tr:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #222;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+    th, td {
+      border: 1px solid #555;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    th {
+      background: linear-gradient(to right, #00ffff, #ff00ff);
+      color: black;
+    }
+    tr:nth-child(even) {
+      background-color: #1c1c1c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="abstract.html">Abstract</a>
+      <a href="introduction.html">Introduction</a>
+      <a href="survey-data.html" class="active">Survey Data</a>
+      <a href="questionnaire.html">Questionnaire</a>
+      <a href="conclusion.html">Conclusion</a>
+      <a href="activity.html">Activity Log</a>
+      <a href="pictures.html">Pictures</a>
+      <a href="members.html">Members</a>
+    </nav>
+  </header>
+  
+  <h1>Survey Data</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>S.NO</th>
+        <th>Name of the Resident</th>
+        <th>Address</th>
+        <th>Mobile No</th>
+        <th>Aadhar Number</th>
+        <th>Experience of Fraud or Not</th>
+        <th>Remarks (If Any)</th>
+      </tr>
+    </thead>
+    <tbody>
+<tr><td>1</td><td>N. Sunitha</td><td>Vedayapalem, Nellore</td><td>9908566750</td><td></td><td>No</td><td></td></tr>
+<tr><td>2</td><td>K. Swapna</td><td>Vedayapalem, Nellore</td><td>9885311615</td><td></td><td>No</td><td></td></tr>
+<tr><td>3</td><td>P. Sujatha</td><td>Vedayapalem, Nellore</td><td>9428788985</td><td></td><td>Yes</td><td>Misplacement</td></tr>
+<tr><td>4</td><td>K. Haribabu</td><td>Vedayapalem, Nellore</td><td>9000452467</td><td></td><td>No</td><td></td></tr>
+<tr><td>5</td><td>S. Sandhya</td><td>Vedayapalem, Nellore</td><td>8106821323</td><td>343341994103</td><td>No</td><td></td></tr>
+<tr><td>6</td><td>Y. Amarnath</td><td>Vedayapalem, Nellore</td><td>9866559750</td><td>218333504691</td><td>No</td><td></td></tr>
+<tr><td>7</td><td>V. Radha</td><td>Vedayapalem, Nellore</td><td>7989456760</td><td>513444124714</td><td>No</td><td></td></tr>
+<tr><td>8</td><td>Jalbeen Surin</td><td>Vedayapalem, Nellore</td><td></td><td></td><td>No</td><td></td></tr>
+<tr><td>9</td><td>S. Sailaja</td><td>Vedayapalem, Nellore</td><td>9100456715</td><td>811714507297</td><td>No</td><td></td></tr>
+<tr><td>10</td><td>R. Vamsi</td><td>Vedayapalem, Nellore</td><td>8999435322</td><td>627332765747</td><td>No</td><td></td></tr>
+<tr><td>11</td><td>M. Raghav</td><td>Vedayapalem, Nellore</td><td>8074941078</td><td>734732647086</td><td>Yes</td><td>Replacement</td></tr>
+<tr><td>12</td><td>S. Pratyusha</td><td>Vedayapalem, Nellore</td><td></td><td></td><td>No</td><td></td></tr>
+<tr><td>13</td><td>P. Neeraja</td><td>Vedayapalem, Nellore</td><td>8686685532</td><td></td><td>No</td><td></td></tr>
+<tr><td>14</td><td>R. Raghavendra</td><td>Vedayapalem, Nellore</td><td>9030718184</td><td>646015051513</td><td>No</td><td></td></tr>
+<tr><td>15</td><td>Y. Subbamma</td><td>Vedayapalem, Nellore</td><td>7669038420</td><td>786692708674</td><td>No</td><td></td></tr>
+<tr><td>16</td><td>Sk. Sammer</td><td>Vedayapalem, Nellore</td><td>9866981265</td><td>96799831875</td><td>No</td><td></td></tr>
+<tr><td>17</td><td>Sk. Reshma</td><td>Vedayapalem, Nellore</td><td>7730008888</td><td></td><td>No</td><td></td></tr>
+<tr><td>18</td><td>N. Vijay</td><td>Vedayapalem, Nellore</td><td>9248614002</td><td>83234173581</td><td>Yes</td><td>Damaged item</td></tr>
+<tr><td>19</td><td>V. Vamsi</td><td>Vedayapalem, Nellore</td><td>7982914474</td><td></td><td>No</td><td></td></tr>
+<tr><td>20</td><td>Sk. Akram</td><td>Vedayapalem, Nellore</td><td>9030931349</td><td>639105895977</td><td>Yes</td><td>Wrong item</td></tr>
+<tr><td>21</td><td>M. Vijayamma</td><td>Vedayapalem, Nellore</td><td>9505684594</td><td>22694442269</td><td>Yes</td><td>Extra charges</td></tr>
+<tr><td>22</td><td>Sk. Suban</td><td>Vedayapalem, Nellore</td><td>9710923495</td><td></td><td>No</td><td></td></tr>
+<tr><td>23</td><td>S. Aruna</td><td>Vedayapalem, Nellore</td><td>8341015628</td><td></td><td>No</td><td>Not received</td></tr>
+<tr><td>24</td><td>D. Rangaiah</td><td>Vedayapalem, Nellore</td><td>9676328325</td><td></td><td>No</td><td></td></tr>
+<tr><td>25</td><td>T. Lohith</td><td>Vedayapalem, Nellore</td><td></td><td>62614483971</td><td>No</td><td></td></tr>
+<tr><td>26</td><td>Ch. Pravallika</td><td>Vedayapalem, Nellore</td><td>6301234404</td><td>649406307848</td><td>No</td><td></td></tr>
+<tr><td>27</td><td>Sk. Shakela</td><td>Vedayapalem, Nellore</td><td></td><td></td><td>No</td><td></td></tr>
+<tr><td>28</td><td>D. Penchalah</td><td>Vedayapalem, Nellore</td><td>9581293546</td><td>318700588990</td><td>No</td><td></td></tr>
+<tr><td>29</td><td>V. Tharun</td><td>Vedayapalem, Nellore</td><td>8719626978</td><td></td><td>No</td><td></td></tr>
+<tr><td>30</td><td>S. Aadhya</td><td>Vedayapalem, Nellore</td><td></td><td></td><td>Yes</td><td>Extra charges</td></tr>
+<tr><td>31</td><td>J. Gireesh</td><td>Vedayapalem, Nellore</td><td>8886303466</td><td></td><td>No</td><td></td></tr>
+<tr><td>32</td><td>V. Sathvik</td><td>Vedayapalem, Nellore</td><td>6303499403</td><td></td><td>No</td><td></td></tr>
+<tr><td>33</td><td>Sk. Umar</td><td>Vedayapalem, Nellore</td><td>9391200050</td><td></td><td>No</td><td></td></tr>
+<tr><td>34</td><td>R. Akshay</td><td>Vedayapalem, Nellore</td><td>7093744205</td><td></td><td>Yes</td><td>Damaged item</td></tr>
+<tr><td>35</td><td>S. Abhinav</td><td>Vedayapalem, Nellore</td><td>9347703687</td><td></td><td>No</td><td></td></tr>
+<tr><td>36</td><td>T. Nitish</td><td>Vedayapalem, Nellore</td><td>8056532234</td><td></td><td>No</td><td></td></tr>
+<tr><td>37</td><td>N. Lokesh</td><td>Vedayapalem, Nellore</td><td>9391330206</td><td></td><td>Yes</td><td>Misplacement</td></tr>
+<tr><td>38</td><td>P. Nayeem</td><td>Vedayapalem, Nellore</td><td>8977144578</td><td></td><td>No</td><td></td></tr>
+<tr><td>39</td><td>Sk. Arshad</td><td>Vedayapalem, Nellore</td><td>9670076436</td><td></td><td>No</td><td></td></tr>
+<tr><td>40</td><td>Y. Kaveri</td><td>Vedayapalem, Nellore</td><td>9158026940</td><td></td><td>No</td><td></td></tr>
+<tr><td>41</td><td>Sk. Afzal</td><td>Vedayapalem, Nellore</td><td>9670740164</td><td></td><td>Yes</td><td>Money scam</td></tr>
+<tr><td>42</td><td>N. Sandeep</td><td>Vedayapalem, Nellore</td><td>8050344885</td><td></td><td>No</td><td></td></tr>
+<tr><td>43</td><td>Y. Meghana</td><td>Vedayapalem, Nellore</td><td>9491338455</td><td></td><td>No</td><td></td></tr>
+<tr><td>44</td><td>Sk. Rizwan</td><td>Vedayapalem, Nellore</td><td>9290144310</td><td></td><td>No</td><td></td></tr>
+<tr><td>45</td><td>S. Pooja</td><td>Vedayapalem, Nellore</td><td>6301500207</td><td></td><td>No</td><td></td></tr>
+<tr><td>46</td><td>K. Geetha</td><td>Vedayapalem, Nellore</td><td>8688082211</td><td></td><td>Yes</td><td>Not received</td></tr>
+<tr><td>47</td><td>D. Deepika</td><td>Vedayapalem, Nellore</td><td>9963633558</td><td></td><td>No</td><td></td></tr>
+<tr><td>48</td><td>Sk. Aslam</td><td>Vedayapalem, Nellore</td><td>7992343142</td><td></td><td>No</td><td></td></tr>
+<tr><td>49</td><td>V. Mohan</td><td>Vedayapalem, Nellore</td><td>8374168752</td><td></td><td>No</td><td></td></tr>
+<tr><td>50</td><td>N. Hema</td><td>Vedayapalem, Nellore</td><td>9392650255</td><td></td><td>Yes</td><td>Wrong product</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

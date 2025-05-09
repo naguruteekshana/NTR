@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Members</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00e6e6;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #00e6e6;
+      left: 0;
+      bottom: -5px;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 3rem;
+      color: #00e6e6;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .members-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      padding: 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .member-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #00e6e6;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.4s, box-shadow 0.4s;
+      backdrop-filter: blur(10px);
+    }
+
+    .member-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 230, 230, 0.4);
+    }
+
+    .member-card h2 {
+      color: #00e6e6;
+      margin-bottom: 10px;
+    }
+
+    .member-card p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .back-home {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 15px 30px;
+      background-color: #00e6e6;
+      color: #000;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-home:hover {
+      background-color: #00b3b3;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Community Survey</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="abstract.html">Abstract</a></li>
+      <li><a href="introduction.html">Introduction</a></li>
+      <li><a href="survey-data.html">Survey Data</a></li>
+      <li><a href="questionnaire.html">Questionnaire</a></li>
+      <li><a href="conclusion.html">Conclusion</a></li>
+      <li><a href="activity.html">Activity Log</a></li>
+      <li><a href="pictures.html">Pictures</a></li>
+      <li><a href="members.html" class="active">Members</a></li>
+    </ul>
+  </nav>
+
+  <h1 data-aos="fade-up">Team Members</h1>
+
+  <div class="members-container">
+    <div class="member-card" data-aos="zoom-in" data-aos-delay="100">
+      <h2>Sk. Farzana</h2>
+      <p>Team Leader</p>
+    </div>
+    <div class="member-card" data-aos="zoom-in" data-aos-delay="200">
+      <h2>N. Teekshana</h2>
+      <p>Designer</p>
+    </div>
+    <div class="member-card" data-aos="zoom-in" data-aos-delay="300">
+      <h2>V. Lakshmi Manasa</h2>
+      <p>Research Head</p>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-home" data-aos="fade-up">← Back to Home</a>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
